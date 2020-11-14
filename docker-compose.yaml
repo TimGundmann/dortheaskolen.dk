@@ -1,6 +1,6 @@
 version: '2'
 services:
-  gundmanndk:
+  dortheskolendk:
     restart: "always"
     build: .
     ports:
