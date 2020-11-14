@@ -1,0 +1,10 @@
+version: '2'
+services:
+  gundmanndk:
+    restart: "always"
+    build: .
+    ports:
+     - "7777:80"
+    container_name: dortheaskolen-dk
+    environment:
+      TZ: "Europe/Amsterdam"
