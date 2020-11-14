@@ -24,7 +24,7 @@ pipeline {
 
         stage('Build') {
             steps{   
-                sh 'ng build --prod'
+                sh 'ng build --aot --prod --output-hashing none'
             }
         }
         stage('Deploy') {
