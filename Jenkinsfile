@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Prepare') {
             steps{
-                git 'https://github.com/TimGundmann/dortheaskolen.dk.git', branch: main
+                git 'https://github.com/TimGundmann/dortheaskolen.dk.git' branch: main
                 sh 'npm install'
             }                
         }
